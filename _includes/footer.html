@@ -1,0 +1,63 @@
+
+<!-- Footer Wrapper -->
+<footer id='footer-wrapper'>
+<div class='container row-x1'>
+<div class='footer-widgets-wrap'>
+<div class='footer unang_blogger-widget-ready section' id='footer1' name='Footer 1'><div class='widget Text' data-version='2' id='Text1'>
+<div class='widget-title'>
+<h3 class='title'>About Us</h3></div>
+<div class='widget-content excerpt'>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an... <a href="https://daffadev.my.id/" target="_blank">more &#8594;</a>
+</div>
+</div><div class='widget LinkList' data-version='2' id='LinkList2'>
+<div class='widget-title'>
+<h3 class='title'>Follow Us</h3></div>
+<div class='widget-content'>
+<ul class='social-icons social social-bg-hover'>
+<li class='facebook-f link-0'><a class='facebook-f' href='https://www.facebook.com/unangning_eu' target='_blank'></a></li>
+<li class='twitter link-1'><a class='twitter' href='https://twitter.com/unangning_eu' target='_blank'></a></li>
+<li class='youtube link-2'><a class='youtube' href='https://www.youtube.com/c/unangning_eu_Blogger' target='_blank'></a></li>
+<li class='instagram link-3'><a class='instagram' href='https://instagram.com/unangning_eu-dotcom' target='_blank'></a></li>
+<li class='rss link-4'><a class='rss' href='https://daffadev.my.id/' target='_blank'></a></li>
+</ul>
+</div>
+</div></div>
+<div class='footer unang_blogger-widget-ready no-items section' id='footer2' name='Footer 2'></div>
+<div class='footer unang_blogger-widget-ready section' id='footer3' name='Footer 3'><div class='widget PopularPosts' data-version='2' id='PopularPosts2'>
+<div class='widget-title'>
+<h3 class='title'>Popular Posts</h3></div>
+<div class='widget-content'>
+  {% for data in site.data.featured limit:2 %}
+<article class='popular-post post item-1'>
+<a class='entry-image-wrap is-image' href="{{site.baseurl}}/{{data.url}}">
+<span class='entry-thumb' data-image="{{data.image}}"></span>
+</a>
+<div class='entry-header'>
+<h2 class='entry-title'><a href="{{site.baseurl}}/{{data.url}}">{{data.title}}</a></h2>
+<div class='entry-meta'><span class='entry-category m-item'>{{data.tag}}</span></div>
+</div>
+</article>
+{%- endfor -%}
+</div>
+</div></div>
+</div>
+</div>
+<div class='footerbar'>
+<div class='container row-x1'>
+<div class='footer-copyright' id='footer-copyright'>
+<div class='copyright-text'>Template by - <span id='unangning_eu' title='unangning_eu'>{{site.author}}</span> | Powered by <a href='https://github.com' rel='dofollow' target='_blank' title='Github Templates'>Github</a></div>
+</div>
+<div class='footer-menu section' id='footer-menu' name='Footer Menu'><div class='widget LinkList' data-version='2' id='LinkList155'>
+<div class='widget-content'>
+<ul class='link-list'>
+<li><a href="{{site.baseurl}}">Home</a></li>
+<li><a href='#'>About</a></li>
+<li><a href='#'>Contact Us</a></li>
+<li><a href='index562e.html?hl=ar'>Fork <i class="fab fa-github"></i></a></li>
+</ul>
+</div>
+</div></div>
+</div>
+</div>
+</footer>
+</div>

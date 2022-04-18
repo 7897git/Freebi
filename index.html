@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class='blog-posts hfeed container index-post-wrap'>
+  {% for post in paginator.posts %}
+<article class='blog-post hentry index-post post-0'>
+<a class='entry-image-wrap is-image' href="{{ site.baseurl }}{{ post.url }}">
+<span class='entry-thumb' data-image="{{post.image}}"></span>
+</a>
+<div class='entry-header'>
+<h2 class='entry-title'><a class='entry-title-link' href="{{ site.baseurl }}{{ post.url }}" rel='bookmark'>{{ post.title }}</a></h2>
+<div class='entry-meta'>
+<span class='entry-category m-item'>{{post.tag}}</span>
+</div>
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+</div>
+</article>
+  {% endfor %}
+      </div>
+</div>

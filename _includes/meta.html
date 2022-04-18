@@ -1,0 +1,34 @@
+    
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ site.name }} – {% endif %}{{ page.title }} {{ site.description }}</title>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name="Description" content="{{ site.description }}" />
+    <!-- Mendeklarasikan warna yang muncul pada address bar Chrome versi seluler -->
+    <meta name="theme-color" content="#cccccc" />
+    <!-- Mendeklarasikan ikon untuk iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="{{ site.name }}" />
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/favicon/apple-icon-120x120.png" />
+    <!-- Mendeklarasikan ikon untuk Windows -->
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/favicon/ms-icon-144x144.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt| strip_html }}" />
+    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    {% else %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+    <meta name="author" content="{{ site.name }}" />
+
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="twitter:title" content="{{ page.title }}" />
+    {% endif %}
+

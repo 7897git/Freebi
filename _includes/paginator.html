@@ -1,0 +1,13 @@
+<div class='post-nav'>
+{% if paginator.total_pages > 1 %}
+{% if paginator.previous_page %}
+<a class='post-nav-newer-link' href="{{ paginator.previous_page_path | prepend: site.url }}" id='Blog1_post-nav-newer-link'>
+Newes Post
+</a>{% endif %}
+<span class='post-nav-older-link'>
+    {% if paginator.next_page %}
+<a href="{{ paginator.next_page_path | prepend: site.url }}" id="Blog1_post-nav-older-link">
+Older Post</a>{% endif %}
+ {% endif %}
+</span>
+</div>

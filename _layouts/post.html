@@ -1,0 +1,66 @@
+---
+layout: default
+---
+
+<div class="blog-posts hfeed container item-post-wrap">
+<article class='blog-post hentry item-post'>
+<script type='application/ld+json'>{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://androidbutut.blogspot.com/2022/04/lorem-ipsum.html"
+  },
+  "headline": "{{page.title}}","description": "{{page.description}}","datePublished": "{{ page.date | date: '%B %e, %Y' }}",
+  "dateModified": "{{ page.date | date: '%B %e, %Y' }}","image": {
+    "@type": "ImageObject","url": "{{page.image}}",
+    "height": 630,
+    "width": 1200},"publisher": {
+    "@type": "Organization",
+    "name": "Github",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60",
+      "width": 206,
+      "height": 60
+    }
+  },"author": {
+    "@type": "Person",
+    "name": "{{site.name}}"
+  }
+}</script>
+<div class='item-post-inner'>
+<div class='entry-header blog-entry-header'>
+<nav id='breadcrumb'><a class='home' href="{{site.baseurl}}/">Home</a><em class='delimiter'></em><a class='label' href='{{site.baseurl}}/search/label/{{page.tag}}'>{{page.tag}}</a></nav>
+<script type='application/ld+json'>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{site.baseurl}}/"},{"@type":"ListItem","position":2,"name":"Test","item":"{{site.baseurl}}/search/label/{{page.tag}}"},{"@type":"ListItem","position":3,"name":"{{ page.title }}","item":"{{site.baseurl}}{{page.url}}"}]}</script>
+<h1 class='entry-title'>{{ page.title }}</h1>
+</div>
+<div class='entry-content-wrap'>
+<div class='post-body entry-content' id='post-body'>
+    {{ content }}
+</div>
+</div>
+</div>
+<div class='post-footer'>
+<div class='entry-tags'>
+<span class='tags-label'>Tags:</span>
+<a class='label-link' href='{{site.baseurl}}/search/label/Test.html' rel='tag'>{{page.tag}}</a>
+</div>
+<div class='post-share'>
+<ul class='unang_blogger-share-links social social-bg'>
+<li class='facebook-f flex-1'><a class='facebook window-ify' data-height='650' data-url='https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}' data-width='550' href='javascript:;' rel='nofollow' title='Facebook'><span>Share
+on Facebook</span></a></li>
+<li class='twitter flex-1'><a class='twitter window-ify' data-height='460' data-url='https://twitter.com/intent/tweet?url={{site.url}}{{page.url}}&text={{page.title}}' data-width='550' href='javascript:;' rel='nofollow' title='Twitter'><span>Share
+on Twitter</span></a></li>
+<li class='ms-links flex-auto'>
+<ul class='msl-items'>
+<li class='whatsapp'><a class='whatsapp window-ify' data-height='550' data-url='https://api.whatsapp.com/send?text={{page.title}} | {{site.baseurl}}/{{page.url}}' data-width='900' href='javascript:;' rel='nofollow' title='WhatsApp'></a></li>
+<li class='email'><a class='email window-ify' data-height='460' data-url='mailto:?subject=Lorem Ipsum&body={{site.url}}{{page.url}}' data-width='550' href='javascript:;' rel='nofollow' title='Email'></a></li>
+<li class='show-hid'><a href='javascript:;' rel='nofollow'></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</article>
+</div>

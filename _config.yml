@@ -1,0 +1,51 @@
+name: Nama Anda
+description: Blog from SomeWhere
+author: Unangning_EU
+avatar: /assets/img/logo.png
+
+footer-links:
+  email:
+  facebook:
+  github: 
+  instagram:
+  twitter: 
+  youtube: 
+  disqus: 
+
+google_analytics: UA-102169339-1
+
+url: https://daffadev.my.id
+
+baseurl: ""
+
+permalink: /:title
+
+version: v1.2.0
+
+kramdown:
+  
+  input: GFM
+
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+
+    css_class: 'highlight'
+
+
+sass:
+  style: :expanded 
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+paginate: 7
+paginate_path: '/page-:num/'
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME

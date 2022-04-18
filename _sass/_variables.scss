@@ -1,0 +1,89 @@
+/*
+-----------------------------------------------
+Name:        Freebi
+Version:     1.0.0 - Free
+Author:      unangning_eu
+Author Url:  https://daffadev.my.id/
+-----------------------------------------------*/
+/*-- Google Fonts --*/
+@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:local('Raleway Italic'),local(Raleway-Italic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:400;font-display:swap;src:local('Raleway Italic'),local(Raleway-Italic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:local('Raleway Medium Italic'),local(Raleway-MediumItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwvqJ_DNCb_Vo.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:500;font-display:swap;src:local('Raleway Medium Italic'),local(Raleway-MediumItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwvqJ_AtCb.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:local('Raleway SemiBold Italic'),local(Raleway-SemiBoldItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwkqV_DNCb_Vo.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:600;font-display:swap;src:local('Raleway SemiBold Italic'),local(Raleway-SemiBoldItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgwkqV_AtCb.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:local('Raleway Bold Italic'),local(Raleway-BoldItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_DNCb_Vo.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:italic;font-weight:700;font-display:swap;src:local('Raleway Bold Italic'),local(Raleway-BoldItalic),url(https://fonts.gstatic.com/s/raleway/v14/1Ptpg8zYS_SKggPNyCgw9qR_AtCb.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:local(Raleway),local(Raleway-Regular),url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:400;font-display:swap;src:local(Raleway),local(Raleway-Regular),url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:local('Raleway Medium'),local(Raleway-Medium),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqhPAMif.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:500;font-display:swap;src:local('Raleway Medium'),local(Raleway-Medium),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwN4rWqZPAA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:local('Raleway SemiBold'),local(Raleway-SemiBold),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqhPAMif.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:600;font-display:swap;src:local('Raleway SemiBold'),local(Raleway-SemiBold),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwPIsWqZPAA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:local('Raleway Bold'),local(Raleway-Bold),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqhPAMif.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Raleway';font-style:normal;font-weight:700;font-display:swap;src:local('Raleway Bold'),local(Raleway-Bold),url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwJYtWqZPAA.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/*-- CSS Variables --*/
+html{
+--body-font:'Raleway',Arial,sans-serif;
+--menu-font:'Raleway',Arial,sans-serif;
+--title-font:'Raleway',Arial,sans-serif;
+--meta-font:'Raleway',Arial,sans-serif;
+--text-font:'Raleway',Arial,sans-serif;
+--body-bg-color:#f5f6f7;
+--body-bg:#f5f6f7 none no-repeat scroll center center;
+--outer-bg:#ffffff;
+--main-color:#6c6cfe;
+--title-color:#171c24;
+--title-hover-color:#6c6cfe;
+--meta-color:#a9b4ba;
+--text-color:#5b6c77;
+--tag-color:#6c6cfe;
+--header-bg:#171c24;
+--header-color:#ffffff;
+--header-hover-color:#bef;
+--submenu-bg:#ffffff;
+--submenu-color:#171c24;
+--submenu-hover-color:#6c6cfe;
+--megamenu-bg:#ffffff;
+--megamenu-color:#171c24;
+--megamenu-hover-color:#6c6cfe;
+--mobilemenu-bg:#ffffff;
+--mobilemenu-color:#171c24;
+--mobilemenu-hover-color:#6c6cfe;
+--hero-bg:#6c6cfe;
+--hero-color:#ffffff;
+--hero-text-color:#f0f0fa;
+--hero-search-color:#ffffff;
+--widget-title-color:#171c24;
+--post-title-color:#171c24;
+--post-title-hover-color:#6c6cfe;
+--post-text-color:#5b6c77;
+--footer-bg:#1e232b;
+--footer-color:#ffffff;
+--footer-hover-color:#6c6cfe;
+--footer-post-title-color:#ffffff;
+--footer-post-title-hover-color:#6c6cfe;
+--footer-text-color:#aaaaaa;
+--footerbar-bg:#171c24;
+--footerbar-color:#ffffff;
+--footerbar-hover-color:#6c6cfe;
+--button-bg:#6c6cfe;
+--button-color:#ffffff;
+--button-hover-bg:#6161e4;
+--button-hover-color:#ffffff;
+--border-color:rgba(155,155,155,0.15);
+--bb-color:rgba(0,0,0,0.1);
+}
+html.rtl{
+--body-font:'Cairo',Arial,sans-serif;
+--menu-font:'Cairo',Arial,sans-serif;
+--title-font:'Cairo',Arial,sans-serif;
+--meta-font:'Cairo',Arial,sans-serif;
+--text-font:'Cairo',Arial,sans-serif;
+}
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
